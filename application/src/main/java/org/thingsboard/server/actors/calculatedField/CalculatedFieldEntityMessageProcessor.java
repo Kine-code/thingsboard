@@ -161,6 +161,10 @@ public class CalculatedFieldEntityMessageProcessor extends AbstractContextAwareM
         }
     }
 
+    /**
+     * @param msg
+     * @throws CalculatedFieldException
+     */
     public void process(EntityCalculatedFieldTelemetryMsg msg) throws CalculatedFieldException {
         log.debug("[{}] Processing CF telemetry msg.", msg.getEntityId());
         var proto = msg.getProto();
@@ -176,6 +180,10 @@ public class CalculatedFieldEntityMessageProcessor extends AbstractContextAwareM
         }
     }
 
+    /**
+     * @param msg
+     * @throws CalculatedFieldException
+     */
     public void process(EntityCalculatedFieldLinkedTelemetryMsg msg) throws CalculatedFieldException {
         log.debug("[{}] Processing CF link telemetry msg.", msg.getEntityId());
         var proto = msg.getProto();
