@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 import org.thingsboard.server.common.data.StringUtils;
 import org.thingsboard.server.config.ThingsboardSecurityConfiguration;
 
-@Component(value="jwtHeaderTokenExtractor")
+//@Component(value="jwtHeaderTokenExtractor")
 public class JwtHeaderTokenExtractor implements TokenExtractor {
     public static final String HEADER_PREFIX = "Bearer ";
 

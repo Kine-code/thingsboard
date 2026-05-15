@@ -74,6 +74,10 @@ public class ThingsboardSecurityConfiguration {
 
     public static final String AUTHORIZATION_HEADER = "X-Authorization";
     public static final String AUTHORIZATION_HEADER_V2 = "Authorization";
+
+    public static final String JWT_TOKEN_HEADER_PARAM = AUTHORIZATION_HEADER;
+    public static final String JWT_TOKEN_HEADER_PARAM_V2 = AUTHORIZATION_HEADER_V2;
+
     public static final String JWT_TOKEN_QUERY_PARAM = "token";
 
     public static final String API_KEY_HEADER_PREFIX = "ApiKey ";

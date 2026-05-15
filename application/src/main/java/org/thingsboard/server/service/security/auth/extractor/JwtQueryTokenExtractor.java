@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 import org.thingsboard.server.common.data.StringUtils;
 import org.thingsboard.server.config.ThingsboardSecurityConfiguration;
 
-@Component(value = "jwtQueryTokenExtractor")
+//@Component(value = "jwtQueryTokenExtractor")
 public class JwtQueryTokenExtractor implements TokenExtractor {
 
     @Override
