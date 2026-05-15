@@ -1,5 +1,5 @@
 /**
- * Copyright © 2016-2025 The Thingsboard Authors
+ * Copyright © 2016-2026 The Thingsboard Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,21 +31,29 @@
       flex-shrink: 0;
       white-space: nowrap;
       .tb-nav-header-toolbar {
-        min-height: 64px;
-        height: inherit;
+        min-height: 63.5px;
+        height: 63.5px;
+
+        display: flex;
+        align-items: center;
         padding: 0;
         z-index: 2;
         flex-shrink: 0;
         white-space: nowrap;
         border-bottom: 1px solid rgba(0, 0, 0, .12);
         & > div {
-          height: 64px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           .tb-logo-title {
+            display: block;
             width: auto;
             max-width: 100%;
-            height: 36px;
+            height: 43.5px;
             max-height: 100%;
             margin: auto;
+            object-fit: contain;
           }
         }
       }
@@ -58,6 +66,7 @@
   }
   .tb-primary-toolbar {
     z-index: 2;
+    background: #1f3b7a !important;
     h1 {
       font-size: 24px !important;
       font-weight: 400 !important;

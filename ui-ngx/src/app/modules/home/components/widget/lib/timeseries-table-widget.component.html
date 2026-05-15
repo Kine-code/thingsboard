@@ -1,6 +1,6 @@
 <!--
 
-    Copyright © 2016-2025 The Thingsboard Authors
+    Copyright © 2016-2026 The Thingsboard Authors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@
                    class="flex-1"
                    mat-stretch-tabs="false"
                    [(selectedIndex)]="sourceIndex" (selectedIndexChange)="onSourceIndexChanged()">
-      <mat-tab *ngFor="let source of sources; trackBy: trackBySourcesIndex; let index = index;" [label]="getTabLabel(source)">
+      <mat-tab *ngFor="let source of sources; trackBy: trackBySourcesIndex; let index = index;" [label]="source.displayName">
         <ng-template [ngIf]="isActiveTab(index)">
           <div class="table-container flex-1">
             <table mat-table [dataSource]="source.timeseriesDatasource" [trackBy]="trackByRowTimestamp"
